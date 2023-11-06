@@ -128,7 +128,7 @@ export async function authenticate(
     await signIn('credentials', Object.fromEntries(fromData));
   } catch (error) {
     if ((error as Error).message.includes('Credentials')) {
-      return 'CredentialsSignin';
+      return 'CredentialSignin';
     }
     throw error;
   }
